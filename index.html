@@ -23,21 +23,21 @@
     <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
     <!-- // load  bar -->
     <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css' type='text/css' media='all' />
- <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js'></script>
- <!-- //fonts  -->
- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js'></script>
+   <!-- //fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-<!-- //fotter  -->
- <link rel="stylesheet" href="/assets/css/navbar.css">
- <link rel="stylesheet" href="/assets/css/footer.css">
+    <!-- //fotter  -->
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
   </head>
   
   <body ng-app="md">
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-fade">
+    <nav class="navbar navbar-expand-lg navbar-light bg-fade" style="z-index: 1;">
       <a class="navbar-brand" href="#"
         ><img src="/assets/images/logo-8.png" alt=""
       /></a>
@@ -78,6 +78,7 @@
       </div>
     </nav>
 
+
     <div ng-view>
 
     </div>
@@ -107,7 +108,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-google-plus"></i>
+                                        <i class="fa  fa-google-plus text-white"></i>
                                     </a>
                                 </li>
                                 <li>
@@ -217,7 +218,8 @@
                                         <div class="col dk-footer-form">
                                             <input type="email" class="form-control" placeholder="Email Address">
                                             <button type="submit">
-                                                <i class="fa fa-send"></i>
+                                                <i class="fa fa-paper-plane
+"></i>
                                             </button>
                                         </div>
                                     </div>
