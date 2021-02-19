@@ -1,4 +1,3 @@
-// var myApp = angular.module("md", ["ngRoute"]);
 var app = angular.module("md", ["ngRoute"]);
 app.config(function($routeProvider) {
   $routeProvider
@@ -27,3 +26,7 @@ app.config(function($routeProvider) {
       controller: "aboutusmainController",
     });
 });
+// app.controller("homemainController",function()
+// {
+// $scope.name= "zain";
+// });
