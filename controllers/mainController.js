@@ -20,10 +20,9 @@ app.controller("portfoliomainController", function ($scope) {
   };
 });
 app.controller("blogmainController", function ($scope) {
-  $scope.name = function () {
-    var zain = "blogmainController";
-    return zain;
-  };
+   $scope.BLogObj = {
+   };
+        
 });
 app.controller("contactmainController", function ($scope) {
   $scope.name = function () {
