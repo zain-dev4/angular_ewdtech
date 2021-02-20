@@ -1,86 +1,92 @@
 <link
   rel="stylesheet"
   media="screen"
-  href="/assets/particale/particles.js-master/demo/css/style.css"
+  href="assets/particale/particles.js-master/demo/css/style.css"
 />
-<link rel="stylesheet" href="/assets/css/home.css">
+<link rel="stylesheet" href="assets/css/home.css" />
 
 <!-- count particles -->
 
 <!-- particles.js container -->
-<div
-  id="particles-js" class="particle" >
+<div id="particles-js" class="particle">
   <div class="banner-text-center">
-    <h1  class="heading-first">
-      {{HomeObj.weare}}
-      
-    </h1>
-    <h1 class="heading-sec" >
-      {{HomeObj.creativeAgency}}
-     
-    </h1>
-    <p class="para-text-banner" >
+    <h1 class="heading-first">{{HomeObj.weare}}</h1>
+    <h1 class="heading-sec">{{HomeObj.creativeAgency}}</h1>
+    <p class="para-text-banner">
       {{HomeObj.banner}}
-       <br />
-       <br />
-      <button
-        class="btn btn-lg btn-light text-center">
-        Get started
-      </button>
+      <br />
+      <br />
+      <button class="btn btn-lg btn-light text-center">Get started</button>
     </p>
-   
   </div>
 </div>
 
-<div style="z-index: 1;background-color: white;">
-<div class="container-fluid" style="width: 80%;" >
-<div class="row">
-  <div class="col-md-4">
-<div class="card">
-  <div class="card-head">
-<div style="padding: 10%;background-color: #0087E0;border-bottom: 1px solid antiquewhite;"></div>
+<div style="z-index: 1; background-color: white">
+  <div class="container-fluid" style="width: 80%">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-head">
+            <div
+              style="
+                padding: 10%;
+                background-color: #0087e0;
+                border-bottom: 1px solid antiquewhite;
+              "
+            ></div>
+          </div>
+          <div class="card-body text-center">
+            <img
+              src="assets/images/E-COMMERCE_SOLUTION.png"
+              style="
+                margin-top: -10px;
+                background-color: #0087e0;
+                border: 1px solid aqua;
+                padding: 10%;
+                border-radius: 20px;
+              "
+              alt=""
+            />
+
+            <h2 style="font-size: 2vw">EWD Desgin</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a
+              nobis, quia qui, aspernatur quo minus obcaecati provident numquam
+              natus corporis recusandae pariatur necessitatibus ipsum doloribus
+              quas laborum ipsam reprehenderit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
   </div>
-  <div class="card-body text-center">
-      <img src="/assets/images/E-COMMERCE_SOLUTION.png" style="margin-top:-10px;background-color: #0087E0;border:1px solid aqua; padding: 10%;border-radius:20px" alt="">
 
-    <h2 style="font-size: 2vw;">EWD Desgin</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a nobis, quia qui, aspernatur quo minus obcaecati provident numquam natus corporis recusandae pariatur necessitatibus ipsum doloribus quas laborum ipsam reprehenderit.</p>
-  </div>
-</div>
+  <script src="assets/particale/particles.js-master/particles.js"></script>
+  <script src="assets/particale/particles.js-master/demo/js/app.js"></script>
+  <script src="assets/particale/particles.js-master/demo/js/lib/stats.js"></script>
 
-
-  </div>
-  <div class="col-md-4"></div>
-  <div class="col-md-4"></div>
-</div>
-
-
-</div>
-
-<script src="/assets/particale/particles.js-master/particles.js"></script>
-<script src="/assets/particale/particles.js-master/demo/js/app.js"></script>
-<script src="/assets/particale/particles.js-master/demo/js/lib/stats.js"></script>
-
-<script>
-  var count_particles, stats, update;
-  stats = new Stats();
-  stats.setMode(0);
-  stats.domElement.style.position = "absolute";
-  stats.domElement.style.left = "0px";
-  stats.domElement.style.top = "0px";
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector(".js-count-particles");
-  update = function () {
-    stats.begin();
-    stats.end();
-    if (
-      window.pJSDom[0].pJS.particles &&
-      window.pJSDom[0].pJS.particles.array
-    ) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats();
+    stats.setMode(0);
+    stats.domElement.style.position = "absolute";
+    stats.domElement.style.left = "0px";
+    stats.domElement.style.top = "0px";
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector(".js-count-particles");
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (
+        window.pJSDom[0].pJS.particles &&
+        window.pJSDom[0].pJS.particles.array
+      ) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
     requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-  
-</script>
+  </script>
+</div>

@@ -25,13 +25,13 @@
     <!-- // load  bar -->
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css"
+      href="/cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css"
       type="text/css"
       media="all"
     />
     <script
       type="text/javascript"
-      src="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"
+      src="/cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"
     ></script>
     <!-- //fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -63,9 +63,11 @@
   </head>
 
   <body ng-app="md">
-    <nav class="navbar navbar-expand-lg navbar-light bg-fade sticky-top bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-fade sticky-top bg-dark"
+    >
       <a class="navbar-brand" href="#"
-        ><img src="/assets/images/logo-8.png" alt=""
+        ><img src="assets/images/logo-8.png" alt=""
       /></a>
       <button
         class="navbar-toggler"
@@ -92,15 +94,21 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/portfolio"
+            <a
+              class="nav-item nav-link nav-style text-white"
+              href="#!/portfolio"
               >Portfolio</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/blog">Blog</a>
+            <a class="nav-item nav-link nav-style text-white" href="#!/blog"
+              >Blog</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/contact">Contact</a>
+            <a class="nav-item nav-link nav-style text-white" href="#!/contact"
+              >Contact</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-item nav-link nav-style text-white" href="#!/aboutus"
@@ -110,7 +118,6 @@
         </ul>
       </div>
     </nav>
-    
 
     <div ng-view></div>
     <footer id="dk-footer" class="dk-footer">
@@ -329,10 +336,7 @@
       <!-- End Back to top -->
     </footer>
 
-
     <script src="modal/homepagemodule.js"></script>
     <script src="controllers/mainController.js"></script>
-   
-   
   </body>
 </html>

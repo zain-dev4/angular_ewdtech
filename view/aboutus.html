@@ -1,145 +1,200 @@
 <style>
-    .font-100
-    {
+  .font-100 {
     font-size: 80px;
-    }
- </style>
- <div class="container-fluid">
-     <div class="row mr-0">
-        <div class="col-md-12 text-center">
-           <h3 class="text-center m-0"style="padding-top:4rem;">OUR STORY?</h3>
-           <img src="images/bor.png" style="width: 8%;" class="img-fluid" alt="">
+  }
+</style>
+<div class="container-fluid">
+  <div class="row mr-0">
+    <div class="col-md-12 text-center">
+      <h3 class="text-center m-0" style="padding-top: 4rem">
+        {{aboutusObj.ourstory}}
+      </h3>
+      <img
+        src="assets/images/bor.png"
+        style="width: 8%"
+        class="img-fluid"
+        alt=""
+      />
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center">
+      <p class="para-height pt-4 set-line-h">{{aboutusObj.AfterStory}}</p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+  <div class="row bg-light mr-0" style="margin-top: 4rem">
+    <!-- <div class="col-md-2"></div> -->
+    <div class="col-md-3 offset-md-2">
+      <div class="d-flex text-center mt-4">
+        <div class="border-bottom border-right p-5">
+          <i class="fa fa-home text-02A3F4 font-100"></i>
+          <p>
+            {{aboutusObj.since}} <br />
+            <b> {{aboutusObj.sincedate}}</b>
+          </p>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-10 text-center">
-           <p class="para-height pt-4 set-line-h">
-              EWD Tech was established in 2015 in Faisalabad, Industrial hub of Pakistan. Our goal was to provide services regarding designing and development in the emerging digital industry for our clients locally and internationally. Today many professionals and business owners have endorsed EWD Tech for its services. EWD Tech will continue to improve its services and provide support to its clients.
-           </p>
+        <div class="border-bottom p-5">
+          <i class="fa fa-users text-02A3F4 font-100"></i>
+          <p>
+            {{aboutusObj.Employ}} <br />
+            <b> {{aboutusObj.TotalEmploy}}</b>
+          </p>
         </div>
-        <div class="col-md-1"></div>
-     </div>
-     <div class="row bg-light mr-0"style="margin-top:4rem;">
-        <!-- <div class="col-md-2"></div> -->
-        <div class="col-md-3 offset-md-2">
-           <div class="d-flex text-center mt-4">
-              <div class="border-bottom border-right p-5">
-                 <i class="fa fa-home text-02A3F4 font-100"></i>
-                 <p>Since <br> <b> 2015</b></p>
-              </div>
-              <div class="border-bottom p-5">
-                 <i class="fa fa-users text-02A3F4 font-100"></i>
-                 <p>Employes <br> <b> 40+</b></p>
-              </div>
-           </div>
-           <div class="d-flex text-center mb-4">
-              <div class=" border-right p-5">
-                 <i class="fa fa-home text-02A3F4 font-100"></i>
-                 <p>Since <br> <b> 2015</b></p>
-              </div>
-              <div class=" p-5 ">
-                 <i class="fa 
-                    fa-users text-02A3F4 font-100"></i>
-                 <p>Employes <br> <b> 40+</b></p>
-              </div>
-           </div>
+      </div>
+      <div class="d-flex text-center mb-4">
+        <div class="border-right p-5">
+          <i class="fa fa-home text-02A3F4 font-100"></i>
+          <p>
+            {{aboutusObj.since}} <br />
+            <b> {{aboutusObj.sincedate}}</b>
+          </p>
         </div>
-        <div class="col-md-6  text-center padding-for-delivere-p1 d-flex justify-content-center align-items-center flex-column">
-           <h3 class="font-size-40 m-0">Number Of Projects Deliver</h3>
-           <i class=" fa fa-tasks text-02A3F4 font-100 pt-4"></i>
-           <b class="font-25 pt-3">200 <sup>+</sup></b>
+        <div class="p-5">
+          <i class="fa fa-users text-02A3F4 font-100"></i>
+          <p>
+            {{aboutusObj.Employ}} <br />
+            <b> {{aboutusObj.TotalEmploy}}</b>
+          </p>
         </div>
-     </div>
- <div class="row pt-5" style="background-color: #DCE5EB;">
-
-        <div class="col-md-10 offset-md-1 text-center ">
-        <h3 class="m-0">HOW WE DO ?</h3>
-        <img src="images/bor.png" style="width: 8%;" class="img-fluid" alt="">
-        <p class="para-height text-justify pt-4">EWD tech employs hard working team of graphic designers, web designers and IT experts who provide quality service and solutions. Our solutions are very cost effective and efficient that are suitable for both small and big corporations and also businesses. </p>
-        </div>
- </div>
- <div class="row" style="background-color: #DCE5EB;">
+      </div>
+    </div>
+    <div
+      class="col-md-6 text-center padding-for-delivere-p1 d-flex justify-content-center align-items-center flex-column"
+    >
+      <h3 class="font-size-40 m-0">{{aboutusObj.deleverproject}}</h3>
+      <i class="fa fa-tasks text-02A3F4 font-100 pt-4"></i>
+      <b class="font-25 pt-3"
+        >{{aboutusObj.Totaldeleverproject}} <sup>+</sup></b
+      >
+    </div>
+  </div>
+  <div class="row pt-5" style="background-color: #dce5eb">
+    <div class="col-md-10 offset-md-1 text-center">
+      <h3 class="m-0">HOW WE DO ?</h3>
+      <img
+        src="assets/images/bor.png"
+        style="width: 8%"
+        class="img-fluid"
+        alt=""
+      />
+      <p class="para-height text-justify pt-4">
+        EWD tech employs hard working team of graphic designers, web designers
+        and IT experts who provide quality service and solutions. Our solutions
+        are very cost effective and efficient that are suitable for both small
+        and big corporations and also businesses.
+      </p>
+    </div>
+  </div>
+  <div class="row" style="background-color: #dce5eb">
     <!-- first row  -->
     <div class="col-md-1"></div>
-    <div class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center">
-       <img src="images/graph.png" class="img-fluid w-75" alt="">
+    <div
+      class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center"
+    >
+      <img src="assets/images/graph.png" class="img-fluid w-75" alt="" />
     </div>
-    <div class="col-md-9 d-flex justify-content-center align-items-center pt-5 ">
-       <p class="m-0 text-justify"> <b>Ask customer what they want .</b> We ask customer all queries regarding the problem or solution they want so we don’t miss out any details. We make full effort to implement what customer has asked and not leave any detail behind. We keep in contact with customer and inform them about the progress.  </p>
+    <div class="col-md-9 d-flex justify-content-center align-items-center pt-5">
+      <p class="m-0 text-justify">
+        <b>Ask customer what they want .</b> We ask customer all queries
+        regarding the problem or solution they want so we don’t miss out any
+        details. We make full effort to implement what customer has asked and
+        not leave any detail behind. We keep in contact with customer and inform
+        them about the progress.
+      </p>
     </div>
     <div class="col-md-1"></div>
     <!-- second row  -->
     <div class="col-md-1"></div>
-    <div class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center">
-       <img src="images/computericon.png" class="w-75" alt="">
+    <div
+      class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center"
+    >
+      <img src="assets/images/computericon.png" class="w-75" alt="" />
     </div>
     <div class="col-md-9 d-flex justify-content-center align-items-center pt-5">
-       <p class="para-height m-0 text-justify"> <b>Quality design and user-friendly solution .</b> Our top priority is to provide best quality solution to our customer, we use latest technology and software available to implement user friendly customized solutions that pleases our client.</p>
+      <p class="para-height m-0 text-justify">
+        <b>Quality design and user-friendly solution .</b> Our top priority is
+        to provide best quality solution to our customer, we use latest
+        technology and software available to implement user friendly customized
+        solutions that pleases our client.
+      </p>
     </div>
- </div>
- <div class="row " style="background-color: #DCE5EB;">
+  </div>
+  <div class="row" style="background-color: #dce5eb">
     <div class="col-md-1"></div>
-    <div class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center">
-       <img src="images/icon_3.png" class="img-fluid w-75" alt="">
+    <div
+      class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center"
+    >
+      <img src="assets/images/icon_3.png" class="img-fluid w-75" alt="" />
     </div>
     <div class="col-md-9 d-flex justify-content-center align-items-center pt-5">
-       <p class="para-height m-0 text-justify"> <b>Testing and Implementation.
-          </b>Once we have designed the solution, we test it at our end several times to see if we can further improve it or if there is any problem in it because sending customer the final design. If you want any changes, we will still do that for you.
-       </p>
+      <p class="para-height m-0 text-justify">
+        <b>Testing and Implementation. </b>Once we have designed the solution,
+        we test it at our end several times to see if we can further improve it
+        or if there is any problem in it because sending customer the final
+        design. If you want any changes, we will still do that for you.
+      </p>
     </div>
- </div>
- <div class="row pb-5" style="background-color: #DCE5EB;">
+  </div>
+  <div class="row pb-5" style="background-color: #dce5eb">
     <div class="col-md-1"></div>
-    <div class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center">
-       <img src="images/icon_2.png" class="img-fluid w-75" alt="">
+    <div
+      class="col-md-1 text-center pt-5 d-flex justify-content-center align-items-center"
+    >
+      <img src="assets/images/icon_2.png" class="img-fluid w-75" alt="" />
     </div>
     <div class="col-md-9 pt-5 d-flex justify-content-center align-items-center">
-       <p class="para-height m-0 text-justify"> <b>Customer Support .</b>We hold customer satisfaction in high regard. Every service we provide whether it’s designing, web development or expert guidance until the customer is completely satisfied and informs us, we are available 24/7 to help in any way possible.
-       </p>
+      <p class="para-height m-0 text-justify">
+        <b>Customer Support .</b>We hold customer satisfaction in high regard.
+        Every service we provide whether it’s designing, web development or
+        expert guidance until the customer is completely satisfied and informs
+        us, we are available 24/7 to help in any way possible.
+      </p>
     </div>
- </div>
- <div class="row mr-0">
-    <div class="col-md-1">
+  </div>
+  <div class="row mr-0">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center" style="padding-top: 4rem">
+      <h2 class="m-0">{{aboutusObj.ourstrenght}</h2>
+      <img
+        src="assets/images/bor.png"
+        style="width: 8%"
+        class="img-fluid"
+        alt=""
+      />
+      <p class="para-height m-0 text-justify">
+        {{aboutusObj.ourstrenghtDetail}}
+      </p>
     </div>
-    <div class="col-md-10 text-center" style="padding-top: 4rem;">
-       <h2 class="m-0">OUR STRENGTH
-       </h2>
-       <img src="images/bor.png"  style="width: 8%;" class="img-fluid" alt="">
-       <p class="para-height m-0 text-justify">We are a pioneer in providing outclass and world standard web based solutions for small to large corporate companies. We have genius and talented designers, programmers, and marketing executives so to lead our clients in their web ventures.
-          We take each new opportunity and implement it to the improvement of overall development procedures.
-       </p>
+  </div>
+  <div class="row mb-2" style="padding-top: 4rem; padding-bottom: 60px">
+    <div class="col-md-1"></div>
+    <div class="col-md-5 text-center">
+      <div class="card border-0 bg-light p-5">
+        <h5>{{aboutusObj.multifashionandsolution}}</h5>
+        <p class="para-height m-0 text-justify">
+          {{aboutusObj.multifashionandsolutionDetail}}
+        </p>
+      </div>
+      <div class="card border-0 mt-4 bg-light p-5">
+        <h5>{{ aboutusObj.TRANSPARENTCOLLABORATION}}</h5>
+        <p class="para-height m-0 text-justify">
+          {{aboutusObj.TRANSPARENTCOLLABORATIONDetail}}
+        </p>
+      </div>
     </div>
- </div>
- <div class="row  mb-2" style="padding-top: 4rem;padding-bottom: 60px;">
-    <div class="col-md-1">
+    <div class="col-md-5 text-center">
+      <div class="card border-0 bg-light p-5">
+        <h5>{{aboutusObj.ENHANCEDACCURACY}}</h5>
+        <p class="para-height m-0 text-justify">
+          {{aboutusObj.ENHANCEDACCURACYDetail}}
+        </p>
+      </div>
+      <div class="card border-0 mt-4 bg-light p-5">
+        <h5>{{aboutusObj.OURAPPROACH}}</h5>
+        <p class="para-height m-0 text-justify">
+          {{aboutusObj.OURAPPROACHDetail}}
+        </p>
+      </div>
     </div>
-    <div class="col-md-5 text-center ">
-       <div class="card border-0 bg-light p-5">
-          <h5>MULTIFACETED PLANS AND SOLUTIONS</h5>
-          <p class="para-height m-0 text-justify" >EWD Web Solutions delivers services and enables clients to cut down costs and provides an up-to-date application. We consider hearing out our clients to understand their requirements and prerequisites. We make smart research and deep
-             analysis then plan the feasible best solutions that are based on innovative technologies.
-          </p>
-       </div>
-       <div class="card border-0  mt-4 bg-light p-5">
-          <h5>TRANSPARENT COLLABORATION</h5>
-          <p class="para-height m-0 text-justify">We happily assist our clients and share free ideas for the victory of their business. Depending on specific requirements, our experts will take clients through each phase of solution development, step-by-step, providing sound advice
-             on technology and application design options. We will respond quickly to your emails and high priority calls.
-          </p>
-       </div>
-    </div>
-    <div class="col-md-5 text-center ">
-       <div class="card border-0 bg-light p-5">
-          <h5>ENHANCED ACCURACY</h5>
-          <p class="para-height m-0 text-justify">Ensure quality and successful project outcomes by engaging our software testing experts. Our QA team has much knowledge and is aware of latest technologies and standards to analyze the process rapidly so to get 100% guarantee on quality.
-             We consider meeting quality principles keeping in mind the end goal to deliver an adaptable and vigorous application.
-          </p>
-       </div>
-       <div class="card border-0  mt-4 bg-light p-5">
-          <h5>OUR APPROACH</h5>
-          <p class="para-height m-0 text-justify">EWD Web Solutions aims to be a most important player in overall software development and IT market. Our approach is to build an outstanding website which helps our clients to represent their businesses on the web in an efficient and
-             successful way. We plan out our workflow that's well-organized, planning that's comprehensive and collaboration that's stable.
-          </p>
-       </div>
-    </div>
- </div>
- </div>
- 
+  </div>
+</div>

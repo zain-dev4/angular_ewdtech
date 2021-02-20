@@ -7,8 +7,8 @@
           position: absolute;
       width: 50%;
       height: 50px;
-      top: 25%;
-      left: 6%;
+      top: 50%;
+      left: 31%;
       margin-left: -50px;
       margin-top: -25px;
 }
@@ -19,7 +19,7 @@
         padding-bottom: 5px;
 }
 .heading-sec{
-            color: white;
+        color: white;
         font-size: 2vw;
         font-weight: bolder;
         text-align: center;
@@ -33,7 +33,7 @@
         /* display: none; */
     }
     .banner-text-center{
-       top: 20%;
+      top: 35%;
       margin-left: -50px;
       margin-top: -25px;
 }
