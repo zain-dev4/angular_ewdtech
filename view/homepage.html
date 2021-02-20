@@ -1,6 +1,50 @@
-<img src="/assets/images/bg3.jpg" alt="" style="height: 80vh;">
+  <link rel="stylesheet" media="screen" href="/assets/particale/particles.js-master/demo/css/style.css">
+
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js" style="background-image: url('/assets/images/bg3.jpg');">
+    <div class="container" style="  position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* margin is -0.5 * dimension */
+    margin-top: -25px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit delectus incidunt dignissimos. Nisi quae dolor exercitationem voluptate cum harum hic nobis nam pariatur dolorem nesciunt alias reiciendis, nemo distinctio?</p>
+    
+    </div>
+</div>
+
+  <div >
 
 {{name()}}
-<p style="padding: 20%;">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quas odio nam enim neque sit, voluptatum iure molestiae impedit earum! Sint laudantium animi sit voluptate molestias itaque beatae quis voluptatum!
-</p>
+
+</div>
+
+ <script src="/assets/particale/particles.js-master/particles.js"></script>
+    <script src="/assets/particale/particles.js-master/demo/js/app.js"></script>
+    <script src="/assets/particale/particles.js-master/demo/js/lib/stats.js"></script>
+
+     <script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>

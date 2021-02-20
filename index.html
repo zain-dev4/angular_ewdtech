@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EWDTECH</title>
+    <!-- particle js  -->
+
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -22,34 +24,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
     <!-- // load  bar -->
-    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css' type='text/css' media='all' />
-   <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js'></script>
-   <!-- //fonts  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"
+    ></script>
+    <!-- //fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
-<!-- //fotter  -->
- <link rel="stylesheet" href="assets/css/navbar.css">
- <link rel="stylesheet" href="assets/css/footer.css">
- <style>
-    .bg-DD4B39 
-    {
-        background-color: #DD4B39 !important;
-    }
-    .bg-0976B4
-    {
-        background-color: #0976B4 !important;
-    }
-    .bg-3B5998
-    {
-        background-color: #3B5998 !important;
-    }
- </style>
+    <!-- //fotter  -->
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <style>
+      .bg-DD4B39 {
+        background-color: #dd4b39 !important;
+      }
+      .bg-0976B4 {
+        background-color: #0976b4 !important;
+      }
+      .bg-3B5998 {
+        background-color: #3b5998 !important;
+      }
+    </style>
   </head>
-  
+
   <body ng-app="md">
-    <nav class="navbar navbar-expand-lg navbar-light bg-fade">
+    <nav class="navbar navbar-expand-lg navbar-light bg-fade sticky-top bg-dark">
       <a class="navbar-brand" href="#"
         ><img src="/assets/images/logo-8.png" alt=""
       /></a>
@@ -68,232 +83,257 @@
         <div class="navbar-nav mr-auto"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-item nav-link active nav-style" href="#!/">Home <span class="sr-only">(current)</span></a
+            <a class="nav-item nav-link active nav-style text-white" href="#!/"
+              >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style" href="#!/services">Services</a>
+            <a class="nav-item nav-link nav-style text-white" href="#!/services"
+              >Services</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style" href="#!/portfolio">Portfolio</a>
+            <a class="nav-item nav-link nav-style text-white" href="#!/portfolio"
+              >Portfolio</a
+            >
           </li>
-           <li class="nav-item">
-            <a class="nav-item nav-link nav-style" href="#!/blog">Blog</a>
+          <li class="nav-item">
+            <a class="nav-item nav-link nav-style text-white" href="#!/blog">Blog</a>
           </li>
-           <li class="nav-item">
-            <a class="nav-item nav-link nav-style" href="#!/contact">Contact</a>
+          <li class="nav-item">
+            <a class="nav-item nav-link nav-style text-white" href="#!/contact">Contact</a>
           </li>
-           <li class="nav-item">
-            <a class="nav-item nav-link nav-style" href="#!/aboutus">About us</a>
+          <li class="nav-item">
+            <a class="nav-item nav-link nav-style text-white" href="#!/aboutus"
+              >About us</a
+            >
           </li>
         </ul>
       </div>
     </nav>
+    <div id="top"></div>
 
-
-    <div ng-view>
-
-    </div>
-   <footer id="dk-footer" class="dk-footer">
-        <div class="container">
+    <div ng-view></div>
+    <footer id="dk-footer" class="dk-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-4">
+            <div class="dk-footer-box-info">
+              <a href="index.html" class="footer-logo">
+                <img
+                  src="assets/images/logo-8.png"
+                  class="footer_logo"
+                  class="img-fluid"
+                />
+              </a>
+              <p class="footer-info-text text-white">
+                Reference site about Lorem Ipsum, giving information on its
+                origins, as well as a random Lipsum generator.
+              </p>
+              <div class="footer-social-link">
+                <h3>Follow us</h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f bg-3B5998"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-google-plus-g bg-DD4B39"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in bg-0976B4"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End Social link -->
+            </div>
+            <!-- End Footer info -->
+            <div class="footer-awarad">
+              <img src="images/icon/best.png" alt="" />
+              <p>Best Design Company 2019</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-12 col-lg-8">
             <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <div class="dk-footer-box-info">
-                        <a href="index.html" class="footer-logo">
-                            <img src="assets/images/logo-8.png"class="footer_logo" class="img-fluid">
-                        </a>
-                        <p class="footer-info-text text-white">
-                           Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
-                        </p>
-                        <div class="footer-social-link">
-                            <h3>Follow us</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f bg-3B5998"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-google-plus-g bg-DD4B39"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in bg-0976B4"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Social link -->
-                    </div>
-                    <!-- End Footer info -->
-                    <div class="footer-awarad">
-                        <img src="images/icon/best.png" alt="">
-                        <p>Best Design Company 2019</p>
-                    </div>
+              <div class="col-md-6">
+                <div class="contact-us">
+                  <div class="contact-icon">
+                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                  </div>
+                  <!-- End contact Icon -->
+                  <div class="contact-info">
+                    <h3>EWD Pakistan</h3>
+                    <p>company short details</p>
+                  </div>
+                  <!-- End Contact Info -->
                 </div>
-                <!-- End Col -->
-                <div class="col-md-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-us">
-                                <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>EWD Pakistan</h3>
-                                    <p>company short details</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                        <div class="col-md-6">
-                            <div class="contact-us contact-us-last">
-                                <div class="contact-icon">
-                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>12345678</h3>
-                                    <p>Give us a call</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Contact Row -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget footer-left-widget">
-                                <div class="section-heading">
-                                    <h3>Useful Links</h3>
-                                    <span class="animate-border border-black"></span>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#">About us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Projects</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Our Team</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">Contact us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Testimonials</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Faq</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End Footer Widget -->
-                        </div>
-                        <!-- End col -->
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget">
-                                <div class="section-heading">
-                                    <h3>Subscribe</h3>
-                                    <span class="animate-border border-black"></span>
-                                </div>
-                                <p class="para text-white"><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
-                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
-                                <form action="#">
-                                    <div class="form-row">
-                                        <div class="col dk-footer-form">
-                                            <input type="email" class="form-control" placeholder="Email Address">
-                                            <button type="submit">
-                                                <i class="fa fa-paper-plane
-"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- End form -->
-                            </div>
-                            <!-- End footer widget -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Row -->
+                <!-- End Contact Us -->
+              </div>
+              <!-- End Col -->
+              <div class="col-md-6">
+                <div class="contact-us contact-us-last">
+                  <div class="contact-icon">
+                    <i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <!-- End contact Icon -->
+                  <div class="contact-info">
+                    <h3>12345678</h3>
+                    <p>Give us a call</p>
+                  </div>
+                  <!-- End Contact Info -->
                 </div>
-                <!-- End Col -->
+                <!-- End Contact Us -->
+              </div>
+              <!-- End Col -->
             </div>
-            <!-- End Widget Row -->
-        </div>
-        <!-- End Contact Container -->
-
-
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span>Copyright © 2019, All Right Reserved Seobin</span>
-                    </div>
-                    <!-- End Col -->
-                    <div class="col-md-6">
-                        <div class="copyright-menu">
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End col -->
+            <!-- End Contact Row -->
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="footer-widget footer-left-widget">
+                  <div class="section-heading">
+                    <h3>Useful Links</h3>
+                    <span class="animate-border border-black"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                    <li>
+                      <a href="#">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Team</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#">Faq</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- End Row -->
+                <!-- End Footer Widget -->
+              </div>
+              <!-- End col -->
+              <div class="col-md-12 col-lg-6">
+                <div class="footer-widget">
+                  <div class="section-heading">
+                    <h3>Subscribe</h3>
+                    <span class="animate-border border-black"></span>
+                  </div>
+                  <p class="para text-white">
+                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                    Reference site about Lorem Ipsum, giving information on its
+                    origins, as well.
+                  </p>
+                  <form action="#">
+                    <div class="form-row">
+                      <div class="col dk-footer-form">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                        <button type="submit">
+                          <i class="fa fa-paper-plane"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- End form -->
+                </div>
+                <!-- End footer widget -->
+              </div>
+              <!-- End Col -->
             </div>
-            <!-- End Copyright Container -->
+            <!-- End Row -->
+          </div>
+          <!-- End Col -->
         </div>
-        <!-- End Copyright -->
-        <!-- Back to top -->
-        <div id="back-to-top" class="back-to-top">
-            <button class="btn btn-dark" title="Back to Top" style="display: block;">
-                <i class="fa fa-angle-up"></i>
-            </button>
+        <!-- End Widget Row -->
+      </div>
+      <!-- End Contact Container -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <span>Copyright © 2019, All Right Reserved Seobin</span>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-6">
+              <div class="copyright-menu">
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- End col -->
+          </div>
+          <!-- End Row -->
         </div>
-        <!-- End Back to top -->
-</footer>
+        <!-- End Copyright Container -->
+      </div>
+      <!-- End Copyright -->
+      <!-- Back to top -->
+      <div id="back-to-top" class="back-to-top">
+        <a
+          href="#top"
+          class="btn btn-dark"
+          title="Back to Top"
+          style="display: block"
+        >
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </div>
+      <!-- End Back to top -->
+    </footer>
 
 
     <script src="modal/homepagemodule.js"></script>
     <script src="controllers/mainController.js"></script>
+   
+   
   </body>
 </html>
