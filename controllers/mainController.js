@@ -1,8 +1,11 @@
 app.controller("homemainController",function($scope){
-    $scope.name= function(){
-        var zain="zain";
-        return zain;
-    }
+    $scope.HomeObj = {
+      weare:`WE ARE`,
+      banner: `We are a passionate ecommerce agency that specializes in eye-catchy,robust, and easy-to-use website design & development, mobile application development`,
+      creativeAgency: ` CREATIVE AGENCY`,
+    };
+        
+    
 });
 app.controller("servicemainController", function ($scope) {
   $scope.name = function () {

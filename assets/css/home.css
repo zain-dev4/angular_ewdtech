@@ -1,0 +1,30 @@
+.particle{
+ 
+    background-position: no-repeat;
+    background-size: cover;
+}
+.banner-text-center{
+          position: absolute;
+      width: 50%;
+      height: 50px;
+      top: 50%;
+      left: 31%;
+      margin-left: -50px;
+      margin-top: -25px;
+}
+.heading-first{
+     color: white;
+        font-size: 2vw;
+        text-align: center;
+        padding-bottom: 5px;
+}
+.heading-sec{
+            color: white;
+        font-size: 2vw;
+        font-weight: bolder;
+        text-align: center;
+        padding-bottom: 5px;
+}
+.para-text-banner{
+    color: white; font-size: 1.5vw; text-align: center;
+}
