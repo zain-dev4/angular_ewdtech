@@ -49,6 +49,9 @@
     <!-- //fotter  -->
     <link rel="stylesheet" href="assets/css/navbar.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
+
+  <body ng-app="md">
     <style>
       .bg-DD4B39 {
         background-color: #dd4b39 !important;
@@ -59,16 +62,13 @@
       .bg-3B5998 {
         background-color: #3b5998 !important;
       }
+      p {
+      }
     </style>
-  </head>
-
-  <body ng-app="md">
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-fade sticky-top bg-dark"
-    >
-      <a class="navbar-brand" href="#"
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand d-flex" href="#"
         ><img src="assets/images/logo-8.png" alt=""
-      /></a>
+      /><b class="mt-4">TECH</b></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -84,34 +84,34 @@
         <div class="navbar-nav mr-auto"></div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-item nav-link active nav-style text-white" href="#!/"
+            <a class="nav-item nav-link active nav-style " href="#!/"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/services"
+            <a class="nav-item nav-link nav-style " href="#!/services"
               >Services</a
             >
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
-              class="nav-item nav-link nav-style text-white"
+              class="nav-item nav-link nav-style "
               href="#!/portfolio"
               >Portfolio</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/blog"
+            <a class="nav-item nav-link nav-style " href="#!/blog"
               >Blog</a
             >
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/contact"
+            <a class="nav-item nav-link nav-style " href="#!/contact"
               >Contact</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-item nav-link nav-style text-white" href="#!/aboutus"
+            <a class="nav-item nav-link nav-style " href="#!/aboutus"
               >About us</a
             >
           </li>
@@ -120,24 +120,24 @@
     </nav>
 
     <div ng-view></div>
-    <footer id="dk-footer" class="dk-footer">
-      <div class="container">
+    <footer id="dk-footer" class="bg-light text-dark">
+      <div class="container-fluid" style="width: 85%;">
         <div class="row">
           <div class="col-md-12 col-lg-4">
             <div class="dk-footer-box-info">
-              <a href="index.html" class="footer-logo">
+              <a href="index.html" class="footer-logo d-flex ">
                 <img
                   src="assets/images/logo-8.png"
                   class="footer_logo"
                   class="img-fluid"
-                />
+                /> <b class="mt-4" style="font-size: 20px ;color: black;">TECH</b>
               </a>
-              <p class="footer-info-text text-white">
+              <p class="  ">
                 Reference site about Lorem Ipsum, giving information on its
                 origins, as well as a random Lipsum generator.
               </p>
               <div class="footer-social-link">
-                <h3>Follow us</h3>
+                <h3 class="text-dark">Follow us</h3>
                 <ul>
                   <li>
                     <a href="#">
@@ -183,9 +183,9 @@
                     <i class="fa fa-map-o" aria-hidden="true"></i>
                   </div>
                   <!-- End contact Icon -->
-                  <div class="contact-info">
-                    <h3>EWD Pakistan</h3>
-                    <p>company short details</p>
+                  <div class="contact-info text-dark">
+                    <h3 class="text-dark">EWD Pakistan</h3>
+                    <p class="text-dark">company short details</p>
                   </div>
                   <!-- End Contact Info -->
                 </div>
@@ -202,8 +202,8 @@
                   </div>
                   <!-- End contact Icon -->
                   <div class="contact-info">
-                    <h3>12345678</h3>
-                    <p>Give us a call</p>
+                    <h3 class="text-dark">12345678</h3>
+                    <p class="text-dark">Give us a call</p>
                   </div>
                   <!-- End Contact Info -->
                 </div>
@@ -216,7 +216,7 @@
               <div class="col-md-12 col-lg-6">
                 <div class="footer-widget footer-left-widget">
                   <div class="section-heading">
-                    <h3>Useful Links</h3>
+                    <h3 class="text-dark">Useful Links</h3>
                     <span class="animate-border border-black"></span>
                   </div>
                   <ul>
@@ -254,10 +254,10 @@
               <div class="col-md-12 col-lg-6">
                 <div class="footer-widget">
                   <div class="section-heading">
-                    <h3>Subscribe</h3>
+                    <h3 class="text-dark">Subscribe</h3>
                     <span class="animate-border border-black"></span>
                   </div>
-                  <p class="para text-white">
+                  <p class="para ">
                     <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
                     Reference site about Lorem Ipsum, giving information on its
                     origins, as well.
@@ -290,14 +290,14 @@
       </div>
       <!-- End Contact Container -->
 
-      <div class="copyright">
+      <div class="copyright ">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8 text-right">
               <span>Copyright © 2019, All Right Reserved Seobin</span>
             </div>
             <!-- End Col -->
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="copyright-menu">
                 <ul>
                   <li>
@@ -309,9 +309,7 @@
                   <li>
                     <a href="#">Privacy Policy</a>
                   </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
+                 
                 </ul>
               </div>
             </div>

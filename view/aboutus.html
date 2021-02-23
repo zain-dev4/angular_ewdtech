@@ -3,6 +3,7 @@
     font-size: 80px;
   }
 </style>
+<img src="/assets/images/contact_us.png" class="img-fluid" alt="">
 <div class="container-fluid">
   <div class="row mr-0">
     <div class="col-md-12 text-center">
@@ -70,7 +71,7 @@
   </div>
   <div class="row pt-5" style="background-color: #dce5eb">
     <div class="col-md-10 offset-md-1 text-center">
-      <h3 class="m-0">HOW WE DO ?</h3>
+      <h3 class="m-0">{{aboutusObj.howwedo}}</h3>
       <img
         src="assets/images/bor.png"
         style="width: 8%"
@@ -78,10 +79,7 @@
         alt=""
       />
       <p class="para-height text-justify pt-4">
-        EWD tech employs hard working team of graphic designers, web designers
-        and IT experts who provide quality service and solutions. Our solutions
-        are very cost effective and efficient that are suitable for both small
-        and big corporations and also businesses.
+       {{aboutusObj.howwedo1st}}
       </p>
     </div>
   </div>
@@ -95,11 +93,7 @@
     </div>
     <div class="col-md-9 d-flex justify-content-center align-items-center pt-5">
       <p class="m-0 text-justify">
-        <b>Ask customer what they want .</b> We ask customer all queries
-        regarding the problem or solution they want so we don’t miss out any
-        details. We make full effort to implement what customer has asked and
-        not leave any detail behind. We keep in contact with customer and inform
-        them about the progress.
+        <b>{{aboutusObj.askcustomerwhattheywant}}</b>{{aboutusObj.askcustomerwhattheywantDetail}}
       </p>
     </div>
     <div class="col-md-1"></div>
@@ -112,10 +106,7 @@
     </div>
     <div class="col-md-9 d-flex justify-content-center align-items-center pt-5">
       <p class="para-height m-0 text-justify">
-        <b>Quality design and user-friendly solution .</b> Our top priority is
-        to provide best quality solution to our customer, we use latest
-        technology and software available to implement user friendly customized
-        solutions that pleases our client.
+        <b>{{aboutusObj.qualityDesighn}}</b> {{aboutusObj.qualityDesighndetail}}
       </p>
     </div>
   </div>
@@ -128,10 +119,7 @@
     </div>
     <div class="col-md-9 d-flex justify-content-center align-items-center pt-5">
       <p class="para-height m-0 text-justify">
-        <b>Testing and Implementation. </b>Once we have designed the solution,
-        we test it at our end several times to see if we can further improve it
-        or if there is any problem in it because sending customer the final
-        design. If you want any changes, we will still do that for you.
+        <b>{{aboutusObj.testandimplemention}} </b>{{aboutusObj.testandimplementiondetail}}
       </p>
     </div>
   </div>
@@ -144,17 +132,14 @@
     </div>
     <div class="col-md-9 pt-5 d-flex justify-content-center align-items-center">
       <p class="para-height m-0 text-justify">
-        <b>Customer Support .</b>We hold customer satisfaction in high regard.
-        Every service we provide whether it’s designing, web development or
-        expert guidance until the customer is completely satisfied and informs
-        us, we are available 24/7 to help in any way possible.
+        <b>{{aboutusObj.costomersopport}}</b>{{aboutusObj.costomersopprtDetail}}
       </p>
     </div>
   </div>
   <div class="row mr-0">
     <div class="col-md-1"></div>
     <div class="col-md-10 text-center" style="padding-top: 4rem">
-      <h2 class="m-0">{{aboutusObj.ourstrenght}</h2>
+      <h2 class="m-0">{{aboutusObj.ourstrenght}}</h2>
       <img
         src="assets/images/bor.png"
         style="width: 8%"
